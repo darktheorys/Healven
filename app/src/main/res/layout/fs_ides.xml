@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:layout_margin="5dp"
+    android:animateLayoutChanges="true"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="10dp">
+
+    <TableLayout
+        android:id="@+id/rw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/navigatorBlue"
+        android:dividerPadding="10dp"
+        android:showDividers="middle">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/rw_image"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_height"
+                android:layout_gravity="center_vertical"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tw_itemname"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/navigatorBlue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tw_itemname2"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/navigatorBlue"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ib_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                app:srcCompat="@drawable/ic_error_24dp" />
+
+            <TextView
+                android:id="@+id/tw_itemdesc"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="false"
+                android:textColor="@color/navigatorBlue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tw_itemdesc2"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/navigatorBlue"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>

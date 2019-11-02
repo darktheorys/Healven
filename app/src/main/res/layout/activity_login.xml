@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/_titleimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/splash_content_description"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_name" />
+
+    <LinearLayout
+
+        android:id="@+id/ly_loginform"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/backwithborder"
+        android:baselineAligned="false"
+        android:foregroundGravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/email_inp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/backwithborder"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:focusable="auto"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:maxEms="100"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:selectAllOnFocus="true"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/navigatorBlue"
+            android:textSize="15sp" />
+
+        <EditText
+            android:autofillHints="password"
+            android:id="@+id/pass_ino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/backwithborder"
+            android:drawableStart="@drawable/ic_blur_on_black_24dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:maxEms="100"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/navigatorBlue"
+            android:textSize="15sp" />
+
+        <Switch
+            android:id="@+id/sw_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:switchPadding="10dp"
+            android:text="@string/remember"
+            android:textColor="@color/navigatorBlue"
+            android:thumbTint="@color/navigatorBlue"
+            android:track="@drawable/switch_back" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/backwithborder"
+                android:backgroundTint="@color/navigatorBlue"
+                android:clickable="true"
+                android:contentDescription="@string/action_sign_in"
+                android:cropToPadding="false"
+                android:focusable="true"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/signin_btn" />
+
+            <ImageButton
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/backwithborder"
+                android:backgroundTint="@color/navigatorBlue"
+                android:clickable="true"
+                android:contentDescription="@string/action_sign_in"
+                android:cropToPadding="false"
+                android:focusable="true"
+                android:maxHeight="50dp"
+                android:scaleType="centerInside"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/signup_btn" />
+        </LinearLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

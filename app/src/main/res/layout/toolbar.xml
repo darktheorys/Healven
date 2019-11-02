@@ -1,0 +1,20 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/topBarHeight"
+    android:background="@color/navigatorBlue"
+    android:minHeight="?attr/actionBarSize"
+    app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+    tools:menu="@menu/top_actionbar">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/topBarHeight"
+        android:layout_gravity="start"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_name_dark" />
+
+</androidx.appcompat.widget.Toolbar>
